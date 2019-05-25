@@ -10,3 +10,9 @@ fi
 
 echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
+
+### Install applications not available via brew cask
+mas install 497799835 # XCode
+mas install 441258766 # Magnet window manager
+mas install 1191449274 # tooth fairy bluetooth utility
+mas install 1381004916 # Discovery (bonjour browser)
