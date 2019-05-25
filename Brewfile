@@ -6,7 +6,7 @@ tap "mas-cli/tap"
 # TODO put all the brew things here, can 'brew list' to see
 brew 'git'
 brew 'hub' # don't forget to alias this
-brew 'node'
+brew 'nvm'
 brew 'mas'
 
 cask 'slack'
