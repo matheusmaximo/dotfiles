@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# The PR has been merged, remote branch likely deleted from the web.
+# Check out master, pull from origin, and delete original branch.
+#
+# $1 - name of remote, origin used as default
+#
+
+branch="$(git symbolic-ref --short -q HEAD)"
+remote="${1:-origin}"
+
+if [[ $branch == 'master' ]]
+then
+    echo "You probably don't want to delete the master branch, eh?"
+    exit 1
+fi
+
+git checkout master
+git pull origin master
+git branch -D $branch
