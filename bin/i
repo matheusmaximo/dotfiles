@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Quick shortcut to intellij for java/kotlin projects.
+
+exec idea "${1:-.}"
