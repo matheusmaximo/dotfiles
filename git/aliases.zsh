@@ -12,6 +12,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+alias gds='git diff --staged --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
 alias g='git'
 alias gc='git commit'
@@ -27,3 +28,6 @@ alias gg='git browse'
 alias gpu='git push -u origin $(git symbolic-ref --short -q HEAD)'
 alias gbye-o="git-pull-master-and-delete-current-branch"
 alias gbye-u="git-pull-master-and-delete-current-branch upstream"
+
+###### make these prettier? get rid of upstream one and move others to bin?
+alias reset_master_upstream="git checkout master && git pull upstream master && git push origin master && git branch"

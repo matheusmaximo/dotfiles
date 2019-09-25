@@ -8,7 +8,8 @@ brew 'git'
 brew 'hub' # don't forget to alias this
 brew 'nvm'
 brew 'mas'
-brew instal jq
+brew 'jq'
+brew 'zsh-syntax-highlighting'
 
 cask 'slack'
 cask 'intellij-idea'
@@ -28,5 +29,3 @@ cask 'spotify'
 cask 'vlc'
 cask 'caffeine'
 # Install 1password manually.
-
- brew 'zsh-syntax-highlighting'
