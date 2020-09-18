@@ -8,5 +8,5 @@ git-up-there() {
     
     git commit
     git push -u origin $branchName
-    gg
+    gh pr create --web
 }
