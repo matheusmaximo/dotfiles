@@ -1,0 +1,1 @@
+alias or="opctl run"
