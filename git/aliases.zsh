@@ -16,4 +16,4 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
 alias gpu='git push -u origin $(git symbolic-ref --short -q HEAD)'
-alias gbye="git-pull-master-and-delete-current-branch"
+alias gbye="git-pull-main-and-delete-current-branch"
