@@ -6,7 +6,6 @@ tap "mas-cli/tap"
 # TODO put all the brew things here, can 'brew list' to see
 brew 'git'
 brew 'gh'
-brew 'nvm'
 brew 'mas'
 brew 'jq'
 brew 'zsh-syntax-highlighting'
@@ -26,5 +25,5 @@ cask 'firefox'
 cask 'spotify'
 cask 'vlc'
 cask 'caffeine'
-cast 'flux'
+cask 'flux'
 # Install 1password manually.
