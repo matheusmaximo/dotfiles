@@ -17,7 +17,7 @@
 #defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
-#chflags nohidden ~/Library
+chflags nohidden ~/Library
 
 # Set a really fast key repeat.
 #defaults write NSGlobalDomain KeyRepeat -int 1
@@ -39,3 +39,9 @@
 #defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 #defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 #defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# Disable automatically launching+playing Music.app when media control is pressed and nothing else is playing.
+# This command doesn't like to be run if already unloaded, so it's wrapped in an condition that requires it to be running
+if [ $(launchctl list | grep -c com.apple.rcd) -ge 1 ]; then
+    launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+fi
