@@ -26,4 +26,3 @@ cask 'spotify'
 cask 'vlc'
 cask 'caffeine'
 cask 'flux'
-# Install 1password manually.
