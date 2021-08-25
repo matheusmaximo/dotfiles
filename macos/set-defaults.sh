@@ -17,7 +17,7 @@
 #defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
-#chflags nohidden ~/Library
+chflags nohidden ~/Library
 
 # Set a really fast key repeat.
 #defaults write NSGlobalDomain KeyRepeat -int 1
@@ -39,3 +39,8 @@
 #defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 #defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 #defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+
+### TODO
+# tap to click for track pad see com.apple.driver.AppleBluetoothMultitouch.trackpad and read com.apple.AppleMultitouchTrackpad clicking setting
+# macbook caps lock to esc: https://github.com/geerlingguy/mac-dev-playbook/issues/22
