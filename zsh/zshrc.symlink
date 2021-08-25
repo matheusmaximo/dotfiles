@@ -66,3 +66,6 @@ source $ZSH/oh-my-zsh.sh
 # Assumes installed zsh-syntax-highlighting via homebrew
 # Would be better to get it added to OMZ
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Add any ssh keys to agent, but don't be loud about it.
+ssh-add -K  &>/dev/null
