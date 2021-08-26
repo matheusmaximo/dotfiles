@@ -1,8 +1,8 @@
 git-up-there() {
     branchName=$(git copy-branch-name)
-    if [ "$branchName" = "master" ]
+    if [ "$branchName" = "main" ]
     then
-        echo "On master branch, switch branches first"
+        echo "On main branch, switch branches first"
         return
     fi
     
