@@ -67,5 +67,8 @@ source $ZSH/oh-my-zsh.sh
 # Would be better to get it added to OMZ
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Load local zshrc file
+[ -f "$HOME/.zshrc.local" ] && . ~/.zshrc.local
+
 # Add any ssh keys to agent, but don't be loud about it.
 ssh-add -K  &>/dev/null

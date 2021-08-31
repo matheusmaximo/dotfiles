@@ -49,6 +49,13 @@ setup_gitconfig () {
   fi
 }
 
+setup_local_zshrc () {
+  if ! [ -f zsh/zshrc.local.symlink ]
+  then
+    touch zsh/zshrc.local.symlink
+  fi
+}
+
 
 link_file () {
   local src=$1 dst=$2
@@ -138,6 +145,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+setup_local_zshrc
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
