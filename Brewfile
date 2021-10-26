@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "mas-cli/tap"
 
 # TODO put all the brew things here, can 'brew list' to see
@@ -27,3 +28,4 @@ cask 'firefox'
 cask 'spotify'
 cask 'caffeine'
 cask 'flux'
+cask 'zsa-wally'
