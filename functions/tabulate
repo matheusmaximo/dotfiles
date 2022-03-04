@@ -1,0 +1,28 @@
+###
+# I often need to save receipts and add up the values.
+# Saving them in a filename format of "{subject} {amount}.{extension}"
+# makes it easy to add up the amounts based on a grep filter.
+#
+# In the future, I'd like to reformat this to output
+# as a table, but I think that much complexity warrants
+# something other than bash. I might do this someday.
+#
+# For now: tabulate "filename filter" outputs:
+# The matches
+# The number of matches
+# The extracted values
+# The number of extracted values (as a visual checksum)
+# The sum total of the extracted values
+###
+tabulate() {
+    matches=$(ls -1 | grep "$1")
+    echo "Matches:"
+    echo $matches
+    echo "Number of Matches: $(echo $matches | wc -l)\n"
+
+    values=$(echo $matches | grep -o '\d*\.\d\d')
+    echo "Extracted values:"
+    echo $values
+    echo "Number of Extracted values: $(echo $values | wc -l)"
+    echo "Total sum: $(echo $values | awk '{s+=$1} END {print s}')"
+}
