@@ -17,5 +17,4 @@ mas install 441258766 # Magnet window manager
 mas install 1191449274 # tooth fairy bluetooth utility
 mas install 1381004916 # Discovery (bonjour browser)
 mas install 1351639930 # Gifski
-mas install 1333542190 # 1Password
 mas install 1510445899 # Meeter
