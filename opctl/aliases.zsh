@@ -1,2 +1,2 @@
 alias or="opctl run"
-alias opctl-clear-cache="opctl node kill && sudo rm -rf ~/Library/Application\ Support/opctl/dcg"
+alias opctl-clear-cache="opctl node kill && sudo rm -rf ~/Library/Application\ Support/opctl/dcg ~/Library/Application\ Support/opctl/ops"
