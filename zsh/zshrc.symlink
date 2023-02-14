@@ -59,13 +59,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-plugins=(yarn sfdx)
-
 source $ZSH/oh-my-zsh.sh
-
-# Assumes installed zsh-syntax-highlighting via homebrew
-# Would be better to get it added to OMZ
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load local zshrc file
 [ -f "$HOME/.zshrc.local" ] && . ~/.zshrc.local
