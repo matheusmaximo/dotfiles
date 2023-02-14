@@ -1,6 +1,10 @@
 syntax on
 
 set nocompatible  " be iMproved, required for vundle
+set hlsearch " highlight all search results
+set ignorecase " ignore case in search
+set incsearch " show search results as you type
+
 filetype off  " required for vundle
 
 " set the runtime path to include Vundle and initialize
@@ -12,7 +16,7 @@ call vundle#begin()
   Plugin 'morhetz/gruvbox'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'preservim/nerdcommenter'
- call vundle#end()
+call vundle#end()
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
