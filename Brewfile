@@ -16,6 +16,7 @@ brew 'nvm'
 brew 'awscli'
 brew 'bat'
 brew 'fx'
+brew 'nvm'
 
 cask '1password'
 cask 'slack'
