@@ -53,6 +53,8 @@ Run this:
 ```sh
 git clone https://github.com/holman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+ls -d -1 "/.dotfiles/"**/ | xargs chown -R "$(whoami)"
+ls -d -1 "/.dotfiles/"**/ | xargs chmod go-w
 script/bootstrap
 ```
 
