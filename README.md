@@ -49,6 +49,7 @@ There's a few special files in the hierarchy.
 ## install
 
 Before starting, install [Xcode](https://developer.apple.com/xcode/) and [Homebrew](https://brew.sh)
+Also, setup [GitHub SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 Run this:
 
