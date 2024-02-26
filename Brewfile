@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "mas-cli/tap"
 
 # TODO put all the brew things here, can 'brew list' to see
@@ -25,7 +24,6 @@ cask 'intellij-idea'
 cask 'datagrip'
 cask 'sequel-pro'
 cask 'docker'
-cask 'viscosity'
 cask 'postman'
 cask 'visual-studio-code'
 cask 'skitch'
