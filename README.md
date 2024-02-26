@@ -48,6 +48,8 @@ There's a few special files in the hierarchy.
 
 ## install
 
+Before starting, install [Xcode](https://developer.apple.com/xcode/) and [Homebrew](https://brew.sh)
+
 Run this:
 
 ```sh
