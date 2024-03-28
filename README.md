@@ -54,7 +54,7 @@ Also, setup [GitHub SSH](https://docs.github.com/en/authentication/connecting-to
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+git clone https://github.com/matheusmaximo/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ls -d -1 "/.dotfiles/"**/ | xargs chown -R "$(whoami)"
 ls -d -1 "/.dotfiles/"**/ | xargs chmod go-w
