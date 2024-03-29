@@ -6,7 +6,6 @@ tap "mas-cli/tap"
 # TODO put all the brew things here, can 'brew list' to see
 brew 'git'
 brew 'gh'
-brew 'mas'
 brew 'jq'
 brew 'zsh-syntax-highlighting'
 brew 'go'
