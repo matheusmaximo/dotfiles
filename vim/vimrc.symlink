@@ -1,3 +1,4 @@
+set t_Co=256
 syntax on
 
 set nocompatible  " be iMproved, required for vundle
@@ -13,9 +14,9 @@ call vundle#begin()
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'preservim/nerdtree'
   Plugin 'ervandew/supertab'
-  Plugin 'morhetz/gruvbox'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'preservim/nerdcommenter'
+  Plugin 'morhetz/gruvbox'
 call vundle#end()
 
 " Wrap gitcommit file types at the appropriate length
@@ -81,4 +82,5 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+
 
