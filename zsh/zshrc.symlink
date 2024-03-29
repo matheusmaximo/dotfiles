@@ -66,5 +66,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Add any ssh keys to agent, but don't be loud about it.
 ssh-add -K  &>/dev/null
-
-eval $(thefuck --alias)
